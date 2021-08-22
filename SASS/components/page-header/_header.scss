@@ -1,0 +1,23 @@
+.page-header {
+    border-bottom: 1px solid $header-border;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__nav,
+.page-header__item {
+    display: inherit;
+    align-items: inherit;
+}
+
+.page-header__logo {
+    margin-right: 93px;
+    @extend %logo, %link;
+}
+
+.logo__first-part {
+    color: $accent-color;
+}

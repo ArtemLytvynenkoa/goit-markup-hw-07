@@ -1,0 +1,54 @@
+.section-offer {
+    padding-bottom: 0;
+}
+
+.section__title--hidden {
+    @extend %visually-hidden;
+}
+
+.section-offer__subtitle {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.section-offer__list {
+    @extend %list;
+    display: flex;
+}
+
+.section-offer__item {
+    max-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.section-offer__text{
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.section__icon-antena::before {
+    background-image: url(../images/Background-img/backgrounds-wwo-section/antenna.svg);
+    @extend %section-offer__item::before;
+}
+
+.section__icon-clock::before {
+    background-image: url(../images/Background-img/backgrounds-wwo-section/clock.svg);
+    @extend %section-offer__item::before;
+}
+
+.section__icon-diagram::before {
+    background-image: url(../images/Background-img/backgrounds-wwo-section/diagram.svg);
+    @extend %section-offer__item::before;
+}
+
+.section__icon-astronaut::before {
+    background-image: url(../images/Background-img/backgrounds-wwo-section/astronaut.svg);
+    @extend %section-offer__item::before;
+}
